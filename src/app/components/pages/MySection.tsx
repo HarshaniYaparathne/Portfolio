@@ -19,7 +19,7 @@ const MySection = () => {
           >
             <h1 className="text-white text-5xl sm:text-6xl lg:text-6xl mb-4 font-extrabold mt-2">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#b171d1] to-[#ee2dc8]">
-                Hello, I'm
+                Hello, I&rsquo;m
               </span>
             </h1>
             <div className="text-white text-3xl sm:text-4xl lg:text-4xl mt-4">
