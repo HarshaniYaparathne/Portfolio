@@ -5,9 +5,11 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
 const MySection = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
+      
       <div className="relative z-10 w-full h-full flex items-center justify-center ml-32">
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full">
           {/* Text Column */}
