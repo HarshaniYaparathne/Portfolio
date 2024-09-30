@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const MySection = () => {
   return (
-    <section className="relative w-full h-screen bg-gradient-to-b from-blue-100 via-white to-blue-100 overflow-hidden">
+    <section>
       <div className="relative z-10 w-full h-full flex items-center justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full max-w-screen-lg">
 
@@ -74,7 +74,7 @@ const MySection = () => {
           >
             <div className="rounded-full w-[250px] h-[250px] lg:w-[410px] lg:h-[410px] relative shadow-lg bg-white">
               <Image
-                src="/images/My/My.jpg"
+                src="/images/My/InShot_20230102_071900024.jpg"
                 alt="My image"
                 className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
                 width={350}
