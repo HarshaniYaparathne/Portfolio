@@ -1,4 +1,4 @@
-"use client"; // Ensure it's a client component
+"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -11,15 +11,15 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 bg-transperent p-3 h-20 w-full justify-center backdrop-blur-md">
-      {/* Adjusted height with h-16 and padding with p-3 */}
-      <div className="container mx-auto flex justify-between items-center h-full">
-        {/* Container is set to full height */}
-        <div className="text-white text-xl font-bold ml-12">YMHD</div>
+    <nav className="fixed top-0 left-0 w-full p-5 bg-transparent backdrop-blur-md z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-blue-500 text-2xl font-bold tracking-wide">
+          YMHD
+        </div>
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <button onClick={toggleMenu} className="text-blue-500">
             <svg
-              className="w-5 h-5"  // Adjusted the size of the menu icon
+              className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -34,18 +34,17 @@ const NavBar: React.FC = () => {
             </svg>
           </button>
         </div>
-        <div className={`flex-col md:flex-row md:flex ${isOpen ? "block" : "hidden"} space-x-6 mr-[750px]`}>
-          {/* Increased spacing between items with space-x-6 */}
-          <Link href="#home" className="text-white hover:text-gray-400 text-lg">
+        <div className={`md:flex space-x-8 ${isOpen ? "block" : "hidden"} md:block`}>
+          <Link href="#home" className="text-blue-500 hover:text-gray-400 text-lg">
             Home
           </Link>
-          <Link href="#about" className="text-white hover:text-gray-400 text-lg">
+          <Link href="#about" className="text-blue-500 hover:text-gray-400 text-lg">
             About
           </Link>
-          <Link href="#projects" className="text-white hover:text-gray-400 text-lg">
+          <Link href="#projects" className="text-blue-500 hover:text-gray-400 text-lg">
             Projects
           </Link>
-          <Link href="#contact" className="text-white hover:text-gray-400 text-lg">
+          <Link href="#contact" className="text-blue-500 hover:text-gray-400 text-lg">
             Contact
           </Link>
         </div>
