@@ -40,6 +40,41 @@ const About: React.FC = () => {
             </p>
           </div>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8"
+        >
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h2 className="text-blue-900 text-2xl font-bold">Education</h2>
+            <p className="mt-4 text-blue-700">
+              Bachelor of Science in Computer Science from XYZ University, where I developed a strong
+              foundation in software engineering and project management.
+            </p>
+          </div>
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h2 className="text-blue-900 text-2xl font-bold">Interests</h2>
+            <p className="mt-4 text-blue-700">
+              In my spare time, I enjoy exploring new technologies, contributing to open-source projects,
+              and enhancing my skills in UI/UX design.
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="bg-white shadow-lg rounded-lg p-6 mt-8"
+        >
+          <h2 className="text-blue-900 text-2xl font-bold">Contact</h2>
+          <p className="mt-4 text-blue-700">
+            Feel free to reach out to me via email at <a href="mailto:your-email@example.com" className="text-blue-600 underline">your-email@example.com</a> or connect with me on 
+            <a href="https://linkedin.com/in/your-linkedin" className="text-blue-600 underline"> LinkedIn</a>.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
