@@ -1,3 +1,5 @@
+
+import Footer from "./components/common_part/Footer";
 import NavBar from "./components/common_part/NavBar";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
@@ -21,6 +23,9 @@ export default function Home() {
         </section>
         <section id="contact">
           <Contact />
+        </section>
+        <section id="footer">
+          <Footer />
         </section>
       </div>
     </main>

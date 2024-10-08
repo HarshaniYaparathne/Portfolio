@@ -13,61 +13,64 @@ const MySection = () => {
 
           {/* Text Column */}
           <motion.div
-  initial={{ opacity: 0, scale: 0.5 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5 }}
-  className="col-span-1 flex flex-col justify-start items-start text-left px-8 mt-8" // Adjusted to justify text and add top margin
->
-  <h1 className="text-blue-900 text-5xl sm:text-6xl lg:text-6xl mb-4 font-extrabold mt-2">
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
-      Hello, I&rsquo;m
-    </span>
-  </h1>
-  <div className="text-blue-800 text-3xl sm:text-4xl lg:text-4xl mt-4">
-    <TypeAnimation
-      sequence={[
-        "Harshani Yaparathne",
-        1000,
-        "UI/UX Engineer",
-        1000,
-        "Frontend Developer",
-        1000,
-      ]}
-      wrapper="div"
-      speed={50}
-      style={{ fontSize: "1em", display: "inline-block" }}
-      repeat={Infinity}
-    />
-  </div>
-  <p className="text-blue-700 text-base sm:text-lg mb-6 lg:text-xl mt-2 text-justify"> {/* Added text-justify for justified text */}
-    I bring enthusiasm and self-motivation to every project, striving to create intuitive and engaging user experiences. 
-    As a collaborative team member, I excel in cross-functional environments, 
-    contributing to the success of the organization while pursuing continuous personal and professional growth in the field of UI/UX design. With a strong dedication to user-centered design principles and a keen eye for detail, I am passionate about leveraging my skills in prototyping, wireframing, and usability testing to tackle challenges effectively. I am committed to staying abreast of industry trends and emerging technologies, maintaining a positive approach to ensure that design solutions meet user needs and drive business outcomes.
-  </p>
-  <div>
-    <Link
-      href="/#contact"
-      className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-blue-800 text-white"
-    >
-      Contact Me
-    </Link>
-    <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-blue-800 text-white mt-3 justify-center">
-      <a href="/CV/Harshani Yaparathne.pdf" download="Harshani Yaparathne.pdf">
-        <span className="block rounded-full px-6 py-3 bg-white text-blue-700 border-2 border-blue-600 hover:bg-blue-700 hover:text-white">
-          Download CV
-        </span>
-      </a>
-    </button>
-  </div>
-</motion.div>
-
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="col-span-1 flex flex-col justify-start items-start text-left pl-6 pr-4 mt-8" // Adjusted left padding
+          >
+            <h1 className="text-blue-900 text-5xl sm:text-6xl lg:text-6xl mb-4 font-extrabold mt-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+                Hello, I&rsquo;m
+              </span>
+            </h1>
+            <div className="text-blue-800 text-3xl sm:text-4xl lg:text-4xl mt-4">
+              <TypeAnimation
+                sequence={[
+                  "Harshani Yaparathne",
+                  1000,
+                  "UI/UX Engineer",
+                  1000,
+                  "Frontend Developer",
+                  1000,
+                ]}
+                wrapper="div"
+                speed={50}
+                style={{ fontSize: "1em", display: "inline-block" }}
+                repeat={Infinity}
+              />
+            </div>
+            <p className="text-blue-700 text-base sm:text-lg mb-6 lg:text-xl mt-2 text-justify">
+              I bring enthusiasm and self-motivation to every project, striving to create intuitive and engaging user experiences. 
+              As a collaborative team member, I excel in cross-functional environments, 
+              contributing to the success of the organization while pursuing continuous personal and professional growth in the field of UI/UX design. 
+              With a strong dedication to user-centered design principles and a keen eye for detail, I am passionate about leveraging my skills in prototyping, 
+              wireframing, and usability testing to tackle challenges effectively. 
+              I am committed to staying abreast of industry trends and emerging technologies, maintaining a positive approach to ensure that design solutions 
+              meet user needs and drive business outcomes.
+            </p>
+            <div>
+              <Link
+                href="/#contact"
+                className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-blue-800 text-white"
+              >
+                Contact Me
+              </Link>
+              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-blue-800 text-white mt-3 justify-center">
+                <a href="/CV/Harshani Yaparathne.pdf" download="Harshani Yaparathne.pdf">
+                  <span className="block rounded-full px-6 py-3 bg-white text-blue-700 border-2 border-blue-600 hover:bg-blue-700 hover:text-white">
+                    Download CV
+                  </span>
+                </a>
+              </button>
+            </div>
+          </motion.div>
 
           {/* Image Column */}
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-1 flex justify-center items-center mt-4 lg:mt-0"
+            className="col-span-1 flex justify-center items-center mt-4 lg:mt-0 sm:justify-end"
           >
             <div className="rounded-full w-[250px] h-[250px] lg:w-[410px] lg:h-[410px] relative shadow-lg bg-white">
               <Image
