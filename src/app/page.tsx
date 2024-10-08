@@ -2,6 +2,8 @@ import NavBar from "./components/common_part/NavBar";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import MySection from "./components/pages/MySection";
+import Project from "./components/pages/Project";
+import Projects from "./components/pages/Project";
 
 export default function Home() {
   return (
@@ -14,8 +16,8 @@ export default function Home() {
         <section id="about">
           <About />
         </section>
-        <section id="projects">
-          {/* Projects section content */}
+        <section id="project">
+          <Project/>
         </section>
         <section id="contact">
           <Contact />
