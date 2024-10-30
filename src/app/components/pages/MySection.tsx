@@ -28,7 +28,7 @@ const MySection = () => {
                 sequence={[
                   "Harshani Yaparathne",
                   1000,
-                  "UI/UX Engineer",
+                  "Software Engineer",
                   1000,
                   "Frontend Developer",
                   1000,
@@ -40,13 +40,10 @@ const MySection = () => {
               />
             </div>
             <p className="text-blue-700 text-base sm:text-lg mb-6 lg:text-xl mt-2 text-justify">
-              I bring enthusiasm and self-motivation to every project, striving to create intuitive and engaging user experiences. 
-              As a collaborative team member, I excel in cross-functional environments, 
-              contributing to the success of the organization while pursuing continuous personal and professional growth in the field of UI/UX design. 
-              With a strong dedication to user-centered design principles and a keen eye for detail, I am passionate about leveraging my skills in prototyping, 
-              wireframing, and usability testing to tackle challenges effectively. 
-              I am committed to staying abreast of industry trends and emerging technologies, maintaining a positive approach to ensure that design solutions 
-              meet user needs and drive business outcomes.
+            I'm a motivated software engineer focused on creating efficient, scalable, and user-friendly solutions. 
+            I thrive in collaborative environments, dedicated to clean code and leveraging skills in development, 
+            debugging, and system design to solve complex challenges. I stay current with industry trends to ensure 
+            solutions meet user needs and drive business success.
             </p>
             <div>
               <Link

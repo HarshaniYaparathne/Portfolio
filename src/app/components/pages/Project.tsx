@@ -4,40 +4,40 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Society of Computer Science Official Website - SUSL",
+    description:
+      "A website for the Society of Computer Science, focusing on real-time updates and interactive features.",
+    link: "https://github.com/GihanSVND/SOCS-Website-Front_end",
+  },
+  {
     title: "AudiRAB",
     description:
       "An audiobook app featuring real-time audiobook generation, multilingual support, and AI-driven storytelling.",
-    link: "/projects/audirab",
+    link: "https://github.com/HarshaniYaparathne/Mini-Project",
+  },
+  {
+    title: "AGRIZONE",
+    description:
+      "A mobile app connecting farmers and consumers directly to ensure fair pricing, increased farmer profits, and sustainable market access.",
+    link: "https://github.com/HarshaniYaparathne/iwb102-team-novices",
+  },
+  {
+    title: "Rajarata Pawning Centre Website",
+    description:
+      "A responsive website developed for a pawning center, featuring Bootstrap and Tailwind CSS.",
+    link: "https://github.com/LakshanShalintha/Rajarata-Pawning-Centre",
+  },
+  {
+    title: "Cafe Zero Website",
+    description:
+      "A dynamic website for a cafe, showcasing menu, online orders, and event booking capabilities.",
+    link: "https://github.com/HarshaniYaparathne/Coffee-web",
   },
   {
     title: "Self-Reading Electricity Bill",
     description:
       "A mobile app enabling users to self-read electricity meters, featuring image recognition and bill generation.",
     link: "/projects/electricity-bill",
-  },
-  {
-    title: "Sinhala Text Recognition",
-    description:
-      "An OCR system capable of recognizing Sinhala text, optimized for 'Nirmala UI' and 'Iskoola Pota' fonts.",
-    link: "/projects/sinhala-ocr",
-  },
-  {
-    title: "Society of Computer Science Official Website - SUSL",
-    description:
-      "A website for the Society of Computer Science, focusing on real-time updates and interactive features.",
-    link: "/projects/socs-website",
-  },
-  {
-    title: "Rajarata Pawning Centre Website",
-    description:
-      "A responsive website developed for a pawning center, featuring Bootstrap and Tailwind CSS.",
-    link: "/projects/rajarata-pawning",
-  },
-  {
-    title: "Cafe Zero Website",
-    description:
-      "A dynamic website for a cafe, showcasing menu, online orders, and event booking capabilities.",
-    link: "/projects/cafe-zero",
   },
 ];
 
