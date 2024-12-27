@@ -40,7 +40,7 @@ const MySection = () => {
               />
             </div>
             <p className="text-blue-700 text-base sm:text-lg mb-6 lg:text-xl mt-2 text-justify">
-            I'm a motivated software engineer focused on creating efficient, scalable, and user-friendly solutions. 
+            I&apos;m a motivated software engineer focused on creating efficient, scalable, and user-friendly solutions. 
             I thrive in collaborative environments, dedicated to clean code and leveraging skills in development, 
             debugging, and system design to solve complex challenges. I stay current with industry trends to ensure 
             solutions meet user needs and drive business success.
