@@ -7,23 +7,23 @@ import Link from "next/link";
 
 const MySection = () => {
   return (
-    <section className="bg-gray-900 text-gray-300 min-h-screen flex items-center justify-center">
-      <div className="relative z-10 w-full h-full flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full max-w-screen-lg px-4">
+    <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-300 min-h-screen flex items-center justify-center py-16">
+      <div className="relative z-10 w-full h-full flex items-center justify-center px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full max-w-screen-lg gap-12">
 
           {/* Text Column */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="col-span-1 flex flex-col justify-start items-start text-left mt-8 space-y-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="col-span-1 flex flex-col justify-center text-left space-y-6"
           >
-            <h1 className="text-gray-100 text-5xl sm:text-6xl lg:text-6xl font-extrabold">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400">
+            <h1 className="text-white text-5xl sm:text-6xl font-extrabold leading-tight">
+              <span className="bg-gradient-to-r from-teal-500 to-blue-400 text-transparent bg-clip-text">
                 Hello, I&rsquo;m
               </span>
             </h1>
-            <div className="text-gray-200 text-3xl sm:text-4xl lg:text-4xl">
+            <div className="text-gray-200 text-3xl sm:text-4xl">
               <TypeAnimation
                 sequence={[
                   "Harshani Yaparathne",
@@ -35,27 +35,24 @@ const MySection = () => {
                 ]}
                 wrapper="div"
                 speed={50}
-                style={{ fontSize: "1em", display: "inline-block" }}
+                style={{ fontSize: "1.2em", display: "inline-block" }}
                 repeat={Infinity}
               />
             </div>
-            <p className="text-gray-400 text-base sm:text-lg lg:text-xl text-justify">
-              I&apos;m a motivated software engineer focused on creating efficient, scalable, and user-friendly solutions.
-              I thrive in collaborative environments, dedicated to clean code and leveraging skills in development,
-              debugging, and system design to solve complex challenges. I stay current with industry trends to ensure
-              solutions meet user needs and drive business success.
+            <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">
+              I&rsquo;m a passionate software engineer dedicated to creating scalable, efficient, and user-centered solutions. With experience in system design, development, and debugging, I aim to build clean, sustainable code that addresses real-world problems. I stay up-to-date with industry trends to ensure my solutions meet user needs and drive business success.
             </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Link
                 href="/#contact"
-                className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white text-center transition-all duration-300"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-teal-500 to-teal-600 hover:bg-teal-700 text-white text-center transition-all duration-300"
               >
                 Contact Me
               </Link>
               <a
-                href="/CV/Harshani Yaparathne.pdf"
-                download="Harshani Yaparathne.pdf"
-                className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white text-center transition-all duration-300"
+                href="/CV/Harshani_Yaparathne.pdf"
+                download="Harshani_Yaparathne.pdf"
+                className="px-6 py-3 rounded-full border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-center transition-all duration-300"
               >
                 Download CV
               </a>
@@ -64,16 +61,16 @@ const MySection = () => {
 
           {/* Image Column */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="col-span-1 flex justify-center items-center mt-4 lg:mt-0 sm:justify-end"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="col-span-1 flex justify-center items-center"
           >
-            <div className="rounded-full w-[250px] h-[250px] lg:w-[410px] lg:h-[410px] relative shadow-lg bg-gray-800">
+            <div className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[410px] lg:h-[410px] rounded-full overflow-hidden shadow-lg">
               <Image
                 src="/images/My/InShot_20230102_071900024.jpg"
-                alt="My image"
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
+                alt="Harshani Yaparathne"
+                className="object-cover w-full h-full"
                 width={350}
                 height={350}
               />

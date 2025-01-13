@@ -11,7 +11,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full p-5 bg-gray-900 backdrop-blur-md z-50 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full p-5 bg-gradient-to-b from-gray-800 via-gray-900 to-black backdrop-blur-md z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Brand Logo */}
         <div className="text-white text-2xl font-bold tracking-wide">
@@ -44,25 +44,25 @@ const NavBar: React.FC = () => {
         >
           <Link
             href="#home"
-            className="text-gray-300 hover:text-white text-lg transition-colors duration-200"
+            className="text-gray-300 hover:text-teal-500 text-lg transition-colors duration-200"
           >
             Home
           </Link>
           <Link
             href="#about"
-            className="text-gray-300 hover:text-white text-lg transition-colors duration-200"
+            className="text-gray-300 hover:text-teal-500 text-lg transition-colors duration-200"
           >
             About
           </Link>
           <Link
             href="#project"
-            className="text-gray-300 hover:text-white text-lg transition-colors duration-200"
+            className="text-gray-300 hover:text-teal-500 text-lg transition-colors duration-200"
           >
             Projects
           </Link>
           <Link
             href="#contact"
-            className="text-gray-300 hover:text-white text-lg transition-colors duration-200"
+            className="text-gray-300 hover:text-teal-500 text-lg transition-colors duration-200"
           >
             Contact
           </Link>
