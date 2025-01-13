@@ -7,23 +7,23 @@ import Link from "next/link";
 
 const MySection = () => {
   return (
-    <section>
+    <section className="bg-gray-900 text-gray-300 min-h-screen flex items-center justify-center">
       <div className="relative z-10 w-full h-full flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full max-w-screen-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full max-w-screen-lg px-4">
 
           {/* Text Column */}
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-1 flex flex-col justify-start items-start text-left pl-6 pr-4 mt-8" // Adjusted left padding
+            className="col-span-1 flex flex-col justify-start items-start text-left mt-8 space-y-4"
           >
-            <h1 className="text-blue-900 text-5xl sm:text-6xl lg:text-6xl mb-4 font-extrabold mt-2">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+            <h1 className="text-gray-100 text-5xl sm:text-6xl lg:text-6xl font-extrabold">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-400">
                 Hello, I&rsquo;m
               </span>
             </h1>
-            <div className="text-blue-800 text-3xl sm:text-4xl lg:text-4xl mt-4">
+            <div className="text-gray-200 text-3xl sm:text-4xl lg:text-4xl">
               <TypeAnimation
                 sequence={[
                   "Harshani Yaparathne",
@@ -39,26 +39,26 @@ const MySection = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className="text-blue-700 text-base sm:text-lg mb-6 lg:text-xl mt-2 text-justify">
-            I&apos;m a motivated software engineer focused on creating efficient, scalable, and user-friendly solutions. 
-            I thrive in collaborative environments, dedicated to clean code and leveraging skills in development, 
-            debugging, and system design to solve complex challenges. I stay current with industry trends to ensure 
-            solutions meet user needs and drive business success.
+            <p className="text-gray-400 text-base sm:text-lg lg:text-xl text-justify">
+              I&apos;m a motivated software engineer focused on creating efficient, scalable, and user-friendly solutions.
+              I thrive in collaborative environments, dedicated to clean code and leveraging skills in development,
+              debugging, and system design to solve complex challenges. I stay current with industry trends to ensure
+              solutions meet user needs and drive business success.
             </p>
-            <div>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Link
                 href="/#contact"
-                className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-blue-800 text-white"
+                className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white text-center transition-all duration-300"
               >
                 Contact Me
               </Link>
-              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-blue-800 text-white mt-3 justify-center">
-                <a href="/CV/Harshani Yaparathne.pdf" download="Harshani Yaparathne.pdf">
-                  <span className="block rounded-full px-6 py-3 bg-white text-blue-700 border-2 border-blue-600 hover:bg-blue-700 hover:text-white">
-                    Download CV
-                  </span>
-                </a>
-              </button>
+              <a
+                href="/CV/Harshani Yaparathne.pdf"
+                download="Harshani Yaparathne.pdf"
+                className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white text-center transition-all duration-300"
+              >
+                Download CV
+              </a>
             </div>
           </motion.div>
 
@@ -69,7 +69,7 @@ const MySection = () => {
             transition={{ duration: 0.5 }}
             className="col-span-1 flex justify-center items-center mt-4 lg:mt-0 sm:justify-end"
           >
-            <div className="rounded-full w-[250px] h-[250px] lg:w-[410px] lg:h-[410px] relative shadow-lg bg-white">
+            <div className="rounded-full w-[250px] h-[250px] lg:w-[410px] lg:h-[410px] relative shadow-lg bg-gray-800">
               <Image
                 src="/images/My/InShot_20230102_071900024.jpg"
                 alt="My image"
