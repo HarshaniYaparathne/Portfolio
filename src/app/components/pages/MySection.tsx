@@ -68,7 +68,7 @@ const MySection = () => {
           >
             <div className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[410px] lg:h-[410px] rounded-full overflow-hidden shadow-lg">
               <Image
-                src="/images/My/InShot_20230102_071900024.jpg"
+                src="/images/My/prop.png"
                 alt="Harshani Yaparathne"
                 className="object-cover w-full h-full"
                 width={350}
