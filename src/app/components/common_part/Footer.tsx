@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-black text-white py-8">
       <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
         
         {/* Links Section */}

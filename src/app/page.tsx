@@ -7,9 +7,9 @@ import Project from "./components/pages/Project";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-gradient-to-br from-green-800 via-blue-700 to-gray-800">
+    <main className="flex min-h-screen flex-col bg-gradient-to-br bg-black">
       <NavBar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-41 py-5">
         <section id="home">
           <MySection />
         </section>

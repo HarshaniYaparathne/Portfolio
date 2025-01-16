@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-800 via-gray-900 to-gray-900 text-gray-200">
+    <section className="py-16 bg-gradient-to-b from-gray-800 via-gray-900 to-black text-gray-200">
       <div className="container mx-auto px-6 lg:px-16">
         {/* Header Section */}
         <motion.div
@@ -13,7 +14,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400  text-teal-400">
+          <h1 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-400">
             About Me
           </h1>
           <p className="mt-4 text-lg md:text-xl text-gray-300">
@@ -22,11 +23,48 @@ const About: React.FC = () => {
         </motion.div>
 
         {/* Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Left Column */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Image Column */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex justify-center items-center"
+          >
+            <div className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden shadow-lg border-4 border-teal-500">
+              <Image
+                src="/images/My/WhatsApp Image 2025-01-17 at 1.31.35 AM.jpeg"
+                alt="Harshani Yaparathne"
+                className="object-cover w-full h-full"
+                width={400}
+                height={400}
+              />
+            </div>
+          </motion.div>
+
+          {/* Text Column */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-col justify-center space-y-6"
+          >
+            <h2 className="text-2xl font-bold text-teal-400">Who Am I?</h2>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              I am a dedicated software engineering student focused on creating scalable, efficient, and user-centered applications. With a strong foundation in system design, development, and debugging, I take pride in writing clean, maintainable code.  
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              I enjoy solving complex problems through innovative approaches and delivering impactful solutions that address real-world challenges effectively. I am eager to contribute my skills to meaningful projects and collaborate with teams to create sustainable software solutions.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Secondary Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16">
+          {/* Left Column */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl"
           >
@@ -38,8 +76,8 @@ const About: React.FC = () => {
 
           {/* Right Column */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl"
           >
@@ -54,7 +92,7 @@ const About: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Secondary Section */}
+        {/* Additional Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12">
           {/* Education */}
           <motion.div
@@ -70,7 +108,7 @@ const About: React.FC = () => {
             </p>
             <p className="mt-4 text-gray-300 leading-relaxed">
               GCE A/L in Physical Science<br />
-              Mahamaya Girls&apos; College, Kandy (2019)
+              Mahamaya Girls&apos; College, Kandy (2020)
             </p>
           </motion.div>
 
@@ -87,29 +125,6 @@ const About: React.FC = () => {
             </p>
           </motion.div>
         </div>
-
-        {/* Contact Section */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-          className="mt-16 bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl text-center"
-        >
-          <h2 className="text-2xl font-bold text-teal-400 mb-4">Let&apos;s Connect</h2>
-          <p className="text-gray-300">
-            Feel free to reach out at{" "}
-            <a href="mailto:harshanidyaparathne@gmail.com" className="text-teal-400 underline">
-              harshanidyaparathne@gmail.com
-            </a>{" "}
-            or connect with me on{" "}
-            <a
-              href="https://www.linkedin.com/in/harshani-yaparathne-803284269/"
-              className="text-teal-400 underline"
-            >
-              LinkedIn
-            </a>.
-          </p>
-        </motion.div>
       </div>
     </section>
   );
