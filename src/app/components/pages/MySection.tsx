@@ -40,7 +40,11 @@ const MySection = () => {
               />
             </div>
             <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">
-              I&rsquo;m a passionate software engineer dedicated to creating scalable, efficient, and user-centered solutions. With experience in system design, development, and debugging, I aim to build clean, sustainable code that addresses real-world problems. I stay up-to-date with industry trends to ensure my solutions meet user needs and drive business success.
+            I am a dedicated software engineering student focused on creating scalable, efficient, and user-centered applications. My academic background and project experience have provided me with strong skills in system design, development, and debugging.  
+
+I take pride in writing clean, maintainable code and enjoy solving complex problems through innovative approaches. By combining technical expertise with an eye for practicality, I aim to deliver solutions that address real-world challenges effectively.  
+
+I am motivated to contribute my skills to meaningful projects and collaborate with teams to create impactful and sustainable software solutions. 
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Link
@@ -50,7 +54,7 @@ const MySection = () => {
                 Contact Me
               </Link>
               <a
-                href="/CV/Harshani_Yaparathne.pdf"
+                href="CV\SE_20APC4579_Harshani.pdf"
                 download="Harshani_Yaparathne.pdf"
                 className="px-6 py-3 rounded-full border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-center transition-all duration-300"
               >
