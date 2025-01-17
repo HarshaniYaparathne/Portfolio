@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   // State to manage form inputs

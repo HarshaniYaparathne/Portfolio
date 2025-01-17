@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const projects = [
   {
@@ -58,7 +59,7 @@ const ProjectCard: React.FC<{
     whileTap={{ scale: 0.98 }}
     className="bg-gradient-to-b from-gray-800 to-gray-700 rounded-lg shadow-xl overflow-hidden"
   >
-    <img
+    <Image
       src={image}
       alt={title}
       className="w-full h-64 object-cover" // Increased height for larger images

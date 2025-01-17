@@ -54,7 +54,7 @@ const MySection = () => {
                 Contact Me
               </Link>
               <a
-                href="CV\CV_Harshani_Yaparathne.pdf"
+                href="/CV/CV_Harshani Yaparathne.pdf"
                 download="Harshani_Yaparathne.pdf"
                 className="px-6 py-3 rounded-full border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-lg transition-all duration-300"
               >
@@ -66,13 +66,13 @@ const MySection = () => {
           {/* Image Column */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 10 }}
             transition={{ duration: 0.8 }}
             className="col-span-1 flex justify-center items-center"
           >
-            <div className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden shadow-lg border-4 border-teal-500">
+            <div className="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] lg:w-[600px] lg:h-[600px] rounded-full overflow-hidden shadow-lg border-4 border-black">
               <Image
-                src="/images/My/prop.png"
+                src="/images/My/bbb new.png"
                 alt="Harshani Yaparathne"
                 className="object-cover w-full h-full"
                 width={450}
