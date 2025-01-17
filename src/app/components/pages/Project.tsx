@@ -59,11 +59,14 @@ const ProjectCard: React.FC<{
     whileTap={{ scale: 0.98 }}
     className="bg-gradient-to-b from-gray-800 to-gray-700 rounded-lg shadow-xl overflow-hidden"
   >
-    <Image
-      src={image}
-      alt={title}
-      className="w-full h-64 object-cover" // Increased height for larger images
-    />
+    <div className="relative w-full h-64">
+      <Image
+        src={image}
+        alt={title}
+        layout="fill"
+        objectFit="cover"
+      />
+    </div>
     <div className="p-6">
       <h3 className="text-xl font-bold text-teal-300 mb-2">{title}</h3>
       <p className="text-gray-400 mb-4">{description}</p>
