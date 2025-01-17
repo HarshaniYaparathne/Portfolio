@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaBriefcase, FaTools, FaGraduationCap, FaHeart } from "react-icons/fa";
 
 const About: React.FC = () => {
   return (
@@ -61,27 +62,33 @@ const About: React.FC = () => {
 
         {/* Secondary Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16">
-          {/* Left Column */}
+          {/* Experience */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl"
           >
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">Experience</h2>
+            <div className="flex items-center gap-4 mb-4">
+              <FaBriefcase className="text-3xl text-teal-400" />
+              <h2 className="text-2xl font-bold text-teal-400">Experience</h2>
+            </div>
             <p className="text-gray-300 leading-relaxed">
               My work focuses on creating intuitive, scalable, and innovative solutions. I enjoy solving problems with clean and maintainable code, and always strive to make user-centered designs come to life.
             </p>
           </motion.div>
 
-          {/* Right Column */}
+          {/* Skills */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl"
           >
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">Skills</h2>
+            <div className="flex items-center gap-4 mb-4">
+              <FaTools className="text-3xl text-teal-400" />
+              <h2 className="text-2xl font-bold text-teal-400">Skills</h2>
+            </div>
             <ul className="text-gray-300 list-disc pl-5 leading-relaxed">
               <li>Programming: C, JavaScript, Python, TypeScript</li>
               <li>Web Development: React, Next.js, Tailwind CSS</li>
@@ -101,7 +108,10 @@ const About: React.FC = () => {
             transition={{ duration: 0.7 }}
             className="bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl"
           >
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">Education</h2>
+            <div className="flex items-center gap-4 mb-4">
+              <FaGraduationCap className="text-3xl text-teal-400" />
+              <h2 className="text-2xl font-bold text-teal-400">Education</h2>
+            </div>
             <p className="text-gray-300 leading-relaxed">
               B.Sc (Hons) in Computing & Information Systems<br />
               Sabaragamuwa University of Sri Lanka (2022 – Present)
@@ -119,7 +129,10 @@ const About: React.FC = () => {
             transition={{ duration: 0.7 }}
             className="bg-gradient-to-b from-gray-700 to-gray-600 p-8 rounded-lg shadow-xl"
           >
-            <h2 className="text-2xl font-bold text-teal-400 mb-4">Interests</h2>
+            <div className="flex items-center gap-4 mb-4">
+              <FaHeart className="text-3xl text-teal-400" />
+              <h2 className="text-2xl font-bold text-teal-400">Interests</h2>
+            </div>
             <p className="text-gray-300 leading-relaxed">
               Outside of work, I enjoy exploring emerging technologies, contributing to open-source projects, and honing my skills in design and development. I&apos;m also passionate about writing and teaching technical concepts.
             </p>
