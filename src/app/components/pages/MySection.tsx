@@ -53,7 +53,7 @@ const MySection = () => {
                 Contact Me
               </Link>
               <a
-                href="/CV/CV_Harshani Yaparathne.pdf"
+                href="/CV/Harshani_Yaparathne_CV.pdf"
                 download="Harshani_Yaparathne.pdf"
                 className="px-6 py-3 rounded-full border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-lg transition-all duration-300"
               >
