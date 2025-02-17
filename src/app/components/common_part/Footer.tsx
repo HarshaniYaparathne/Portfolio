@@ -24,7 +24,6 @@ const Footer = () => {
           </Link>
         </div>
 
-        {/* Contact Icons */}
         <div className="flex space-x-6 mt-4 sm:mt-0">
           <a href="https://github.com/HarshaniYaparathne" target="_blank" rel="noopener noreferrer">
             <FaGithub className="h-7 w-7 hover:text-teal-400 transition-colors" />
@@ -41,7 +40,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="text-center mt-6 border-t border-teal-600 pt-4">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Harshani Yaparathne. All rights reserved.

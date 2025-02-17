@@ -1,27 +1,24 @@
 "use client";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
-  // State to manage form inputs
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  // Handle form input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted", formData);
 
-    // Clear the form after submission
     setFormData({
       name: "",
       email: "",
@@ -32,13 +29,15 @@ const Contact = () => {
   return (
     <section className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6 lg:px-16">
-        {/* Two-Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Left Column */}
           <div className="space-y-6">
-            <h1 className="text-teal-400 text-4xl sm:text-5xl font-extrabold mb-4">
+            <motion.h1 className="text-teal-400 text-4xl sm:text-5xl font-extrabold mb-4"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.5 }}
+            >
               Get in Touch
-            </h1>
+            </motion.h1>
             <p className="text-gray-400 text-lg">
               Whether you have a question, want to collaborate, or just want to
               say hi, feel free to send me a message.
@@ -55,13 +54,11 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Column - Contact Form */}
           <div className="bg-gray-800 shadow-lg rounded-lg p-8 sm:p-10">
             <form
               onSubmit={handleSubmit}
               className="space-y-6"
             >
-              {/* Name Input */}
               <div>
                 <label
                   htmlFor="name"
@@ -80,7 +77,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Email Input */}
               <div>
                 <label
                   htmlFor="email"
@@ -99,7 +95,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Message Input */}
               <div>
                 <label
                   htmlFor="message"
@@ -118,7 +113,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
                 className="w-full py-3 rounded-md bg-gradient-to-r from-teal-500 to-teal-700 text-white font-bold hover:opacity-90 transition-all duration-300"
